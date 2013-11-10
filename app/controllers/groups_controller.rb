@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
   end
 
   def new
-    @group = current_user.groups.build(group_params)
+    @group = current_user.groups.build
   end
 
   def create

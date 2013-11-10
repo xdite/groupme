@@ -12,5 +12,9 @@ Groupme::Application.routes.draw do
 
   end
 
+  namespace :account do 
+    resources :groups
+  end
+
   root :to => "groups#index"
 end

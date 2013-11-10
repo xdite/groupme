@@ -12,6 +12,7 @@
       <% end %>
 
       <%= render_list :class => "dropdown-menu" do |li|
+          li << link_to("My Group", account_groups_path)
           li << link_to("Logout",destroy_user_session_path, :method => :delete )
       end %>
 
