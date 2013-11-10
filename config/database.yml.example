@@ -1,0 +1,12 @@
+development: &default
+  adapter: mysql2
+  encoding: utf8
+  database: groupme_development
+  host: localhost
+  username: root
+  password: ""
+
+test: &TEST
+  <<: *default
+  database: groupme_test
+

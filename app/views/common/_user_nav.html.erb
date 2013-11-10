@@ -1,0 +1,27 @@
+<ul class="nav pills pull-right">
+
+    <li>
+      <div class="social"> <%=  fb_like(Setting.domain) %>  </div>
+    </li>
+
+  <% if current_user %>    
+
+    <li class="dropdown">
+      <%= link_to "/account" , :class => "dropdown-toggle", :data => { :toggle => "dropdown" } do %>
+        <%= current_user.email %>
+      <% end %>
+
+      <%= render_list :class => "dropdown-menu" do |li|
+          li << link_to("Logout",destroy_user_session_path, :method => :delete )
+      end %>
+
+    </li>
+
+<% else %>
+  <li> <%= link_to( "Sign Up" ,new_user_registration_path) %> </li>
+  <li> <%= link_to( "Login", new_user_session_path )  %> </li>   
+  <li> <%= link_to( "FB Login", "/users/auth/facebook" )  %> </li>   
+<% end %>
+
+
+</ul>
