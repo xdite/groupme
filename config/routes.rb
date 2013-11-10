@@ -4,5 +4,5 @@ Groupme::Application.routes.draw do
 
   resources :groups
   
-  root :to => 'high_voltage/pages#show', :id => 'welcome'
+  root :to => "groups#index"
 end
