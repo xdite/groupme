@@ -6,6 +6,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = Group.find(params[:id])
+    @posts = @group.posts
   end
 
   def new
@@ -13,8 +14,9 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.new(params[:group])
-    if @group.save redirect_to groups_path
+    @group = Group.new(group_params)
+    if @group.save 
+      redirect_to groups_path
     else
       render :new
     end
