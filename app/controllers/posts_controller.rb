@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   before_action :find_group
+  before_action :login_required, :only => [:new, :create, :edit,:update,:destroy]
 
   def new
 
