@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   
   has_many :groups
+  has_many :posts
   
   extend OmniauthCallbacks
 
