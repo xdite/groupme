@@ -1,0 +1,22 @@
+<div class="span12">
+  <table class="table">
+    <thead> <tr>
+      <td> Content </td>
+      <td> Group name </td>
+      <td> Last Update </td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %> 
+    <tr>
+      <td> <%= post.title%>  </td>
+      <td> <p> <%= post.content %> </p> </td>
+
+      <td> 
+
+        <%= link_to("Delete", group_post_path(post.group, post), :class => "btn btn-mini",:method=> :delete,:confirm => "Are you sure?")%></td>
+      </tr>
+      <% end %> 
+    </tbody>
+  </table>
+</div>
