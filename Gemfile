@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use mysql as the database for Active Record
-gem 'mysql2'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -32,8 +32,9 @@ gem "settingslogic"
 
 gem "anjlab-bootstrap-rails", "2.3.1.2", :require => "bootstrap-rails"
 gem "bootstrap_helper", ">= 4.2.2.1"
-gem "simple_form", "~> 3.0.0.rc"
+gem "simple_form", "~> 3.0.1" 
 gem "will_paginate", "3.0.3"
+gem "font-awesome-rails", "~> 3.2.1.3"
 
 gem "high_voltage"
 
@@ -46,12 +47,14 @@ gem "omniauth-facebook"
 gem "auto-facebook", "0.4"
 
 
+gem "whenever"
+
 gem "hipchat"
 
 # Cache
 gem "dalli"
 
-gem "compass-rails", "~> 2.0.alpha.0"
+gem "compass-rails", "~> 1.1.2"
 
 group :development do
   gem "capistrano"

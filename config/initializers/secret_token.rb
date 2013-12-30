@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Groupme::Application.config.secret_key_base = '285c2bfcbc0df6e17279ae4566976b236ef7be927d8b379a150686fdb25e15132dcc23dc70765812efe42a22c6d55281305eb3b44841f1938e4de8b7cf636f5f'
+Groupme::Application.config.secret_key_base = '36a81310027463ea92dd2aecaa8c1ccf89d19e4eb0b94979781ad31223dcd9e2bd0b21253edef142da916ecc9469a904b90ad673626166f34c031f82b9f4bf04'
