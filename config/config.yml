@@ -1,0 +1,21 @@
+defaults: &defaults
+  app_name: "groupme"
+  domain: "http://groupme.dev"    
+  facebook_app_id: 
+  facebook_secret: 
+  hipchat_token: 
+  hipchat_room_name: 
+  admin_emails: 
+    - ""
+  google_analytics_key: ""
+  default_logo_url: "/logo.png"
+  email_sender: ""
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

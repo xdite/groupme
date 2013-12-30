@@ -1,3 +1,19 @@
+# Rails 101 Code Repo
+
+Book Link : <https://leanpub.com/rails-101>
+
+### Facebook Group
+
+<https://www.facebook.com/groups/rails101/>
+
+### Special Thanks
+
+co-reviewer: [sdlong](http://sdlong.logdown.com/)
+
+
+
+
+
 
 ### Style Guides
 
@@ -12,3 +28,10 @@
 
 
 
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
