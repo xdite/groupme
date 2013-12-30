@@ -1,12 +1,14 @@
-# Rails 101 教材原始碼
+# Rails 101 Code Repo
 
-版本： ch-0 (初建置完成)
+Book Link : <https://leanpub.com/rails-101>
 
-切換章節版本： 點擊上面的 Branch 按鈕
+### Facebook Group
 
-有問題歡迎至 [Rail 101 FB社團(https://www.facebook.com/groups/rails101/) 詢問
+<https://www.facebook.com/groups/rails101/>
 
-code review by [sdlong](http://sdlong.logdown.com/)
+### Special Thanks
+
+co-reviewer: [sdlong](http://sdlong.logdown.com/)
 
 
 
@@ -26,3 +28,10 @@ code review by [sdlong](http://sdlong.logdown.com/)
 
 
 
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
